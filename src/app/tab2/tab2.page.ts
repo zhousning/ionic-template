@@ -8,6 +8,7 @@ import { HttpServiceService } from '../services/http-service.service'
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  public title: any = 'tab2 title'
   constructor(
     public storage: StorageService,
     public httpService: HttpServiceService

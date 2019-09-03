@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms'
 import { Tab1Page } from './tab1.page'
 import { SlideModule } from '../module/slide/slide.module'
+import { HeaderModule } from '../module/header/header.module'
 
 @NgModule({
   imports: [
@@ -12,6 +13,7 @@ import { SlideModule } from '../module/slide/slide.module'
     CommonModule,
     FormsModule,
     SlideModule,
+    HeaderModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }])
   ],
   declarations: [Tab1Page]
