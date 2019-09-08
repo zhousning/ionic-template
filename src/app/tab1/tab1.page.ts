@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { StorageService } from '../services/storage.service'
 
 @Component({
   selector: 'app-tab1',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core'
 })
 export class Tab1Page {
   public title: any = 'tab1 header title'
-  constructor() {}
+  constructor(public storage: StorageService) {}
+
+  ngOnInit(): void {
+    this.storage.setData('title', this.title)
+    console.log(this.storage.getData('title'))
+  }
 }

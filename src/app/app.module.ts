@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HeaderModule } from './module/header/header.module'
+import { IonicStorageModule } from '@ionic/storage'
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { HeaderModule } from './module/header/header.module'
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
+    IonicStorageModule.forRoot(),
     AppRoutingModule,
     HeaderModule
   ],

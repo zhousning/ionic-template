@@ -1,0 +1,31 @@
+<!--
+  obj = {
+    bg: bg,
+    label: label,
+    items: [
+      {
+        img: img,
+        url: url,
+        subtitle: subtitle,
+        title: title
+      }
+    ]
+-->
+<ion-grid [ngClass]="obj.bg" class="py-3">
+    <ion-row *ngIf="obj.label" class="mb-3 ml-3">
+        <ion-label>
+            {{obj.label}}
+        </ion-label>
+    </ion-row>
+    <ion-row>
+        <ion-col size="6" *ngFor="let item of obj.items">
+            <ion-card class="rounded-0  border-0 shadow-none m-0 bg-white" [href]="item.url">
+                <ion-img [src]="item.img"></ion-img>
+                <ion-card-header class="text-center">
+                    <ion-card-subtitle>{{item.subtitle}}</ion-card-subtitle>
+                    <ion-card-title class="text-warning">{{item.title}}</ion-card-title>
+                </ion-card-header>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-grid>

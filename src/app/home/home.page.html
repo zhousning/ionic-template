@@ -1,13 +1,78 @@
-<ion-header>
-    <ion-toolbar>
-        <ion-title>home222</ion-title>
-    </ion-toolbar>
-</ion-header>
+<app-header [title]="title"></app-header>
 
 <ion-content>
-    <ion-list>
-        <ion-item *ngFor="let item of arr">
-            <ion-label> {{item}} </ion-label>
-        </ion-item>
-    </ion-list>
+    <app-slide [slides]="slides"></app-slide>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg1.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg2.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg3.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg4.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg5.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg1.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg2.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg3.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg4.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg5.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <app-two-grid [obj]="two_grid_obj"></app-two-grid>
+    <!--ion-img 外围得加外围标签才能多次使用，不然不显示-->
+    <ion-img src="/assets/images/home-product-banner1.jpg"></ion-img>
+    <app-two-grid [obj]="card_grid_obj"></app-two-grid>
+    <ion-grid>
+        <app-two-grid [obj]="third_grid_obj"></app-two-grid>
+    </ion-grid>
+    <ion-grid>
+        <app-two-grid [obj]="third_grid_obj"></app-two-grid>
+    </ion-grid>
+    <ion-grid>
+        <app-two-grid [obj]="third_grid_obj"></app-two-grid>
+    </ion-grid>
+    <ion-grid>
+        <app-two-grid [obj]="third_grid_obj"></app-two-grid>
+    </ion-grid>
+    <app-two-grid [obj]="third_grid_obj"></app-two-grid>
 </ion-content>

@@ -1,4 +1,5 @@
-<p>
-    slide works!
-</p>
-<ion-button color="primary" href="">button </ion-button>
+<ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let src of slides">
+        <ion-img [src]="src"></ion-img>
+    </ion-slide>
+</ion-slides>
