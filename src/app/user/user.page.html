@@ -1,0 +1,84 @@
+<ion-content color="light">
+    <ion-grid class="p-0">
+        <ion-row>
+            <ion-col class="d-flex flex-row justify-content-start align-items-center py-3 pl-3 text-white user-header-bg">
+                <ion-avatar class="mr-3">
+                    <img src="/assets/images/header-default.png" />
+                </ion-avatar>
+                <ion-label> 496122666 </ion-label>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-list class="mb-2">
+        <ion-item-divider class="pr-3">
+            <ion-label> 我的订单 </ion-label>
+            <ion-note slot="end">全部订单 〉 </ion-note>
+        </ion-item-divider>
+        <ion-row>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg1.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg2.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg3.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+            <ion-col>
+                <a [routerLink]="['/tabs/tabs/tab1']">
+                    <ion-img src="/assets/images/home-ctg4.jpg" alt=""></ion-img>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-list>
+    <ion-list class="mb-2">
+        <ion-item href="/home" class="mb-1">
+            <ion-icon size="large" slot="start" color="primary" name="people" class="mr-3"></ion-icon>
+            <ion-label>
+                会员中心
+            </ion-label>
+            <ion-note slot="end" color="dark"> 〉 </ion-note>
+        </ion-item>
+        <ion-item href="/home" lines="none">
+            <ion-icon size="large" slot="start" color="primary" name="people" class="mr-3"></ion-icon>
+            <ion-label>会员中心</ion-label>
+            <ion-note slot="end" color="dark"> 〉 </ion-note>
+        </ion-item>
+    </ion-list>
+    <ion-list class="mb-2">
+        <ion-item href="/home" class="mb-1">
+            <ion-icon size="large" slot="start" color="danger" name="people" class="mr-3"></ion-icon>
+            <ion-label>
+                福利中心
+            </ion-label>
+            <ion-note slot="end" color="dark"> 〉 </ion-note>
+        </ion-item>
+        <ion-item href="/home" lines="none">
+            <ion-icon size="large" slot="start" color="danger" name="people" class="mr-3"></ion-icon>
+            <ion-label>福利中心</ion-label>
+            <ion-note slot="end" color="dark"> 〉 </ion-note>
+        </ion-item>
+    </ion-list>
+    <ion-list class="mb-2 py-0">
+        <ion-item href="/home" class="mb-1" lines="none">
+            <ion-icon size="large" slot="start" color="medium" name="build" class="mr-3"></ion-icon>
+            <ion-label>
+                设置
+            </ion-label>
+            <ion-note slot="end" color="dark"> 〉 </ion-note>
+        </ion-item>
+    </ion-list>
+    <ion-list class="mb-3 py-0">
+        <ion-item href="/home" class="mb-1" lines="none">
+            <ion-label class="text-center">
+                退出登录
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

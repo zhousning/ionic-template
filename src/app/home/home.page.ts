@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core'
 export class HomePage implements OnInit {
   public title: any = '首页'
   public arr: any = [1, 2, 3]
+  public defaultHref: any = ''
 
   public slides: any = [
     '/assets/images/home-slide1.jpg',

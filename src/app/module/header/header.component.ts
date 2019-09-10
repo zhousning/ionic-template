@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core'
 })
 export class HeaderComponent implements OnInit {
   @Input() public title: any
+  @Input() public defaultHref: any
   constructor() {}
 
   ngOnInit() {}
