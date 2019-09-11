@@ -1,4 +1,19 @@
-<app-header [title]="title" [defaultHref]='defaultHref'></app-header>
+<!-- <app-header [title]="title" [defaultHref]='defaultHref'></app-header> -->
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-grid class="py-0">
+            <ion-row class="ion-align-items-center">
+                <ion-col size="2" class="ion-text-center">
+                    {{title}}
+                </ion-col>
+                <ion-col size="10">
+                    <ion-searchbar [(ngModel)]="queryText" placeholder="搜索"></ion-searchbar>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <!--<ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search"></ion-searchbar>-->
+    </ion-toolbar>
+</ion-header>
 
 <ion-content>
     <app-slide [slides]="slides"></app-slide>
